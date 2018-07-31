@@ -10,21 +10,26 @@
   License URI: http://opensource.org/licenses/mit-license.php
 */
 
-@darkGrey: #222;
-@lightOrange: #ff8877;
+@colorLink: #ff8877;
+@blueLogo: #47517d;
 @lighterGrey: #f3f3f3;
 @lightGrey: #ddd;
 @mediumGrey: #333;
+@darkGrey: #222;
 
 html, body {
   margin: 0 0;
   padding: 0 0;
   background: @lighterGrey;
   overflow-x: hidden;
+  font-family: 'Archivo', sans-serif;
   a {
     text-decoration: none;
     font-weight: bolder;
-    color: @lightOrange;
+    color: @colorLink;
+    &:hover {
+      color: @lightGrey;
+    }
   }
   input[type=text], textarea, select {
     width: 100%;
@@ -40,18 +45,70 @@ html, body {
     border: 0px;
     color: white;
     &:hover {
-      color: @lightOrange;
+      color: @colorLink;
     }
   }
   hr {
     padding: 0 0;
     border: 0px;
-    background: @lightOrange;
+    background: @colorLink;
     height: 2px;
     width: 150px;
     margin: 30px auto;
   }
 }
+
+
+#header {
+  width: 100%;
+  background: #fff;
+  height: 80px;
+  #logo-header {
+    padding: 5px 10px;
+    float: left;
+  }
+  #menu-header ul {
+    float: right;
+    font-size: 18px;
+    height: 80px;
+    margin: 0 0;
+    font-family: 'Playfair Display', serif;
+    font-weight: regular;
+    li {
+      text-transform: uppercase;
+      float: left;
+      list-style: none;
+      padding: 26px;
+      padding-left: 0;
+      margin: 0 0;
+      a {
+        color: @blueLogo;
+        transition-duration: 150ms;
+        &:hover { color: @colorLink; }
+      }
+    }
+  }
+  &.overflow {
+    height: inherit;
+    #logo-header {
+      float: inherit;
+    }
+    #menu-header ul {
+      float: inherit;
+      height: inherit;
+      width: 100%;
+      li {
+        width: 100%;
+        float: inherit;
+        padding: 5px 0;
+        text-align: center;
+        &:first-child { padding-top: 30px; }
+        &:last-child { padding-bottom: 30px; }
+      }
+    }
+  }
+}
+
 
 #whitesail {
   z-index: 100;
@@ -62,7 +119,7 @@ html, body {
   pointer-events: none;
 }
 
-.rightpanel {
+.main-container {
   height: 100%;
   color: #5a5a5a;
   z-index: 1;
@@ -79,125 +136,6 @@ html, body {
   }
   .h2-comment {
     padding-top: 60px;
-  }
-  .one-comment {
-    padding: 20px 0 0 20px;
-    background: @lighterGrey;
-    margin-bottom: 40px;
-    .comment-author {
-      font-weight: bold;
-      font-size: 20px;
-      color: @lightOrange;
-    }
-    @media screen and (max-width: 1000px) {
-      background: white;
-      margin-bottom: 25px;
-    }
-  }
-}
-
-.leftpanel {
-  z-index: 3;
-  color: @lightGrey;
-  background: @darkGrey;
-  position: fixed;
-  height: 100%;
-  transition-duration: 500ms;
-  .img-header {
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    border-radius: 50%;
-    margin-bottom: 30px;
-    background-size: contain;
-  }
-  a {
-    color: @lightGrey;
-    text-decoration: none;
-  }
-  ul li { list-style: none; }
-  .header { text-align: center; }
-  .header .main-menu ul li a {
-    transition-duration: 100ms;
-    background: @lightOrange;
-    padding: 3px 15px;
-    font-size: 18px;
-    font-weight: bolder;
-    color: @darkGrey;
-    border-left: 0px solid black;
-    &:hover {
-      border-left: 6px solid black;
-    }
-  }
-  .leftpanel-section {
-    padding-top: 25px;
-  }
-  .container-widget {
-    padding: 12px 0;
-    .widget-title {
-      font-size: 25px;
-      margin-bottom: 30px;
-      border-bottom: 1px solid @lightOrange;
-    }
-    ul li:before {
-      font-family: FontAwesome;
-      content: "\f105 ";
-      color: @lightOrange;
-      font-size: 18px;
-      margin-right: 10px;
-    }
-    ul li a {
-      transition-duration: 0.1s;
-      font-size: 18px;
-      background: transparent;
-      color: @lightGrey;
-      font-weight: lighter;
-      padding: 0 0;
-      border-left: 0px solid black;
-      &:hover {
-        background: @lightOrange;
-        color: @darkGrey;
-        font-weight: bolder;
-        padding: 0 4px;
-        border-left: 3px solid black;
-      }
-    }
-  }
-  .search-form-input {
-    background: rgba(255,255,255,0.1);
-    border: 0px;
-    color: white;
-  }
-}
-
-.header-mobile {
-  z-index: 2;
-  transition-duration: 250ms;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  background: #fff;
-  display: none;
-  @media screen and (max-width: 1000px) {
-    display: inherit;
-  }
-  a {
-    font-size: 30px;
-    text-align: right;
-    padding-right: 10px;
-    color: #999;
-    float: right;
-    font-weight: lighter;
-    padding: 10px 15px;
-  }
-  .menubutton {
-    display: none;
-    cursor: pointer;
-    height: 26px;
-    width: 36px;
-    position: absolute;
-    top: 22px;
-    left: 20px;
   }
 }
 
@@ -264,7 +202,7 @@ ul.list-info {
   li:before {
     font-family: FontAwesome;
     content: "\f105 ";
-    color: @lightOrange;
+    color: @colorLink;
     font-size: 18px;
     margin-right: 10px;
   }

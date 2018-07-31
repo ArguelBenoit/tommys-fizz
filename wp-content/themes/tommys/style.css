@@ -15,12 +15,17 @@ body {
   padding: 0 0;
   background: #f3f3f3;
   overflow-x: hidden;
+  font-family: 'Archivo', sans-serif;
 }
 html a,
 body a {
   text-decoration: none;
   font-weight: bolder;
   color: #ff8877;
+}
+html a:hover,
+body a:hover {
+  color: #ddd;
 }
 html input[type=text],
 body input[type=text],
@@ -78,6 +83,61 @@ body hr {
   width: 150px;
   margin: 30px auto;
 }
+#header {
+  width: 100%;
+  background: #fff;
+  height: 80px;
+}
+#header #logo-header {
+  padding: 5px 10px;
+  float: left;
+}
+#header #menu-header ul {
+  float: right;
+  font-size: 18px;
+  height: 80px;
+  margin: 0 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: regular;
+}
+#header #menu-header ul li {
+  text-transform: uppercase;
+  float: left;
+  list-style: none;
+  padding: 26px;
+  padding-left: 0;
+  margin: 0 0;
+}
+#header #menu-header ul li a {
+  color: #47517d;
+  transition-duration: 150ms;
+}
+#header #menu-header ul li a:hover {
+  color: #ff8877;
+}
+#header.overflow {
+  height: inherit;
+}
+#header.overflow #logo-header {
+  float: inherit;
+}
+#header.overflow #menu-header ul {
+  float: inherit;
+  height: inherit;
+  width: 100%;
+}
+#header.overflow #menu-header ul li {
+  width: 100%;
+  float: inherit;
+  padding: 5px 0;
+  text-align: center;
+}
+#header.overflow #menu-header ul li:first-child {
+  padding-top: 30px;
+}
+#header.overflow #menu-header ul li:last-child {
+  padding-bottom: 30px;
+}
 #whitesail {
   z-index: 100;
   position: fixed;
@@ -86,7 +146,7 @@ body hr {
   background: #fff;
   pointer-events: none;
 }
-.rightpanel {
+.main-container {
   height: 100%;
   color: #5a5a5a;
   z-index: 1;
@@ -94,143 +154,18 @@ body hr {
   transition-duration: 100ms;
 }
 @media screen and (max-width: 1000px) {
-  .rightpanel {
+  .main-container {
     padding-top: 100px;
   }
 }
 @media screen and (min-width: 1000px) {
-  .rightpanel .container.not-loop {
+  .main-container .container.not-loop {
     background: white;
     padding: 40px;
   }
 }
-.rightpanel .h2-comment {
+.main-container .h2-comment {
   padding-top: 60px;
-}
-.rightpanel .one-comment {
-  padding: 20px 0 0 20px;
-  background: #f3f3f3;
-  margin-bottom: 40px;
-}
-.rightpanel .one-comment .comment-author {
-  font-weight: bold;
-  font-size: 20px;
-  color: #ff8877;
-}
-@media screen and (max-width: 1000px) {
-  .rightpanel .one-comment {
-    background: white;
-    margin-bottom: 25px;
-  }
-}
-.leftpanel {
-  z-index: 3;
-  color: #ddd;
-  background: #222;
-  position: fixed;
-  height: 100%;
-  transition-duration: 500ms;
-}
-.leftpanel .img-header {
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  border-radius: 50%;
-  margin-bottom: 30px;
-  background-size: contain;
-}
-.leftpanel a {
-  color: #ddd;
-  text-decoration: none;
-}
-.leftpanel ul li {
-  list-style: none;
-}
-.leftpanel .header {
-  text-align: center;
-}
-.leftpanel .header .main-menu ul li a {
-  transition-duration: 100ms;
-  background: #ff8877;
-  padding: 3px 15px;
-  font-size: 18px;
-  font-weight: bolder;
-  color: #222;
-  border-left: 0px solid black;
-}
-.leftpanel .header .main-menu ul li a:hover {
-  border-left: 6px solid black;
-}
-.leftpanel .leftpanel-section {
-  padding-top: 25px;
-}
-.leftpanel .container-widget {
-  padding: 12px 0;
-}
-.leftpanel .container-widget .widget-title {
-  font-size: 25px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #ff8877;
-}
-.leftpanel .container-widget ul li:before {
-  font-family: FontAwesome;
-  content: "\f105 ";
-  color: #ff8877;
-  font-size: 18px;
-  margin-right: 10px;
-}
-.leftpanel .container-widget ul li a {
-  transition-duration: 0.1s;
-  font-size: 18px;
-  background: transparent;
-  color: #ddd;
-  font-weight: lighter;
-  padding: 0 0;
-  border-left: 0px solid black;
-}
-.leftpanel .container-widget ul li a:hover {
-  background: #ff8877;
-  color: #222;
-  font-weight: bolder;
-  padding: 0 4px;
-  border-left: 3px solid black;
-}
-.leftpanel .search-form-input {
-  background: rgba(255, 255, 255, 0.1);
-  border: 0px;
-  color: white;
-}
-.header-mobile {
-  z-index: 2;
-  transition-duration: 250ms;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  background: #fff;
-  display: none;
-}
-@media screen and (max-width: 1000px) {
-  .header-mobile {
-    display: inherit;
-  }
-}
-.header-mobile a {
-  font-size: 30px;
-  text-align: right;
-  padding-right: 10px;
-  color: #999;
-  float: right;
-  font-weight: lighter;
-  padding: 10px 15px;
-}
-.header-mobile .menubutton {
-  display: none;
-  cursor: pointer;
-  height: 26px;
-  width: 36px;
-  position: absolute;
-  top: 22px;
-  left: 20px;
 }
 .article {
   background: white;
