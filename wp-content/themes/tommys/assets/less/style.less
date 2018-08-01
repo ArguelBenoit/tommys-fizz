@@ -62,15 +62,15 @@ html, body {
 #header {
   width: 100%;
   background: #fff;
-  height: 80px;
   #logo-header {
     padding: 5px 10px;
     float: left;
   }
   #menu-header ul {
+    overflow: hidden;
     float: right;
     font-size: 18px;
-    height: 80px;
+    max-height: 80px;
     margin: 0 0;
     font-family: 'Playfair Display', serif;
     font-weight: regular;
@@ -88,22 +88,61 @@ html, body {
       }
     }
   }
-  &.overflow {
-    height: inherit;
-    #logo-header {
-      float: inherit;
+  #sandwich {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 25px;
+    float: right;
+    cursor: pointer;
+    .child {
+      transition-duration: 500ms;
+      height: 2px;
+      border-radius: 1px;
+      width: 30px;
+      background: @blueLogo;
+      position: absolute;
+      &.child1 {transform: translateY(4px)}
+      &.child2 {transform: translateY(14px)}
+      &.child3 {transform: translateY(24px)}
     }
+  }
+  &.overflow {
+    #sandwich { display: inherit; }
+    #logo-header { float: inherit; }
     #menu-header ul {
       float: inherit;
-      height: inherit;
-      width: 100%;
+      height: 0px;
+      transition-duration: 700ms;
+      opacity: 0;
       li {
-        width: 100%;
         float: inherit;
         padding: 5px 0;
         text-align: center;
-        &:first-child { padding-top: 30px; }
+        &:first-child { padding-top: 20px; }
         &:last-child { padding-bottom: 30px; }
+      }
+    }
+  }
+  &.open {
+    #menu-header ul {
+      float: inherit;
+      height: inherit;
+      opacity: 1;
+    }
+    #sandwich {
+      .child {
+        height: 2px;
+        border-radius: 1px;
+        width: 30px;
+        background: @blueLogo;
+        position: absolute;
+        &.child2 {
+          transform: translateY(14px);
+          opacity: 0;
+        }
+        &.child1 { transform: translateY(14px) rotate(225deg); }
+        &.child3 { transform: translateY(14px) rotate(135deg); }
       }
     }
   }

@@ -14,6 +14,13 @@
     }
   ?>
 
+  <!-- sandwich -->
+  <div id="sandwich">
+    <div class="child child1"></div>
+    <div class="child child2"></div>
+    <div class="child child3"></div>
+  </div>
+
   <!-- menu -->
   <div id="menu-header">
     <?php wp_nav_menu(array('theme_location' => 'main_menu')); ?>
