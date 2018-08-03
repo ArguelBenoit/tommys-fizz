@@ -57,5 +57,9 @@ $(document).ready(() => {
     lastScrollTop = $(window).scrollTop();
   });
 
-
+  // article thumbnails squarred alltime
+  $('.thumbnail').css('height', $('.thumbnail').width() + 'px');
+  $(window).resize(() => {
+    $('.thumbnail').css('height', $('.thumbnail').width() + 'px');
+  });
 });

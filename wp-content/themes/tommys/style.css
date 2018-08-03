@@ -20,11 +20,11 @@ html a,
 body a {
   text-decoration: none;
   font-weight: bolder;
-  color: #ff8877;
+  color: #47517d;
 }
 html a:hover,
 body a:hover {
-  color: #ddd;
+  color: #ff8877;
 }
 html .main-container,
 body .main-container {
@@ -136,6 +136,53 @@ body .main-container {
   transform: translateY(19px) rotate(135deg);
 }
 .article {
-  height: 200px;
   background: white;
+  height: inherit;
+  font-family: 'Playfair Display', serif;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.article .thumbnail {
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.article .title-article {
+  padding: 14px;
+  font-size: 16px;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+.article .title-article a {
+  color: #000;
+  transition-duration: 300ms;
+}
+.article .title-article a:hover {
+  color: #777;
+}
+.article .day-article {
+  position: absolute;
+  background: #fff;
+  border-radius: 3px 3px 0 0;
+  height: 45px;
+  width: 70px;
+  margin: 15px 0 0 15px;
+  text-align: center;
+  font-size: 32px;
+  color: #ff8877;
+}
+.article .years-article {
+  font-family: 'Archivo', sans-serif;
+  font-size: 12px;
+  color: #47517d;
+  position: absolute;
+  background: #fff;
+  border-radius: 0 0 3px 3px;
+  height: 25px;
+  width: 70px;
+  margin: 60px 0 0 15px;
+  text-align: center;
 }
