@@ -15,6 +15,7 @@ $(document).ready(() => {
       $('#header').attr('class', 'overflow');
     } else if (headerWidth > logoWidth + menuWidth) {
       $('#header').attr('class', '');
+      $('#header').css('height', 80);
     }
   };
   headerSize();
@@ -26,14 +27,35 @@ $(document).ready(() => {
   $('#header').css('height', 80);
   $('#sandwich').click( () => {
     $('#header').toggleClass('open');
-    var height = ($('#menu-header ul li').length * 38) + 40;
+    var height = ($('#menu-header ul li').length * 38) + 50;
     if ( $('#header').hasClass('open') ) {
       $('#header').css('height', 80 + height);
     } else if ( !$('#header').hasClass('open') && $('#header').hasClass('overflow') ) {
       $('#header').css('height', 80);
+      // $('#header #menu-header ul').css('height', height);
     } else if ( !$('#header').hasClass('open') && !$('#header').hasClass('overflow') ){
       $('#header').css('height', 80);
     }
   });
+
+  // header scroll
+  var scrollTop = $(window).scrollTop();
+  var lastScrollTop = scrollTop;
+  $(window).scroll( () => {
+    if (lastScrollTop < 400) {
+      $('#header').css('margin-top', '0px');
+    } else if ($(window).scrollTop() > lastScrollTop) { // plus bas
+      if($('#header').hasClass('open')) {
+        $('#header').toggleClass('open');
+        $('#header').css('height', 80);
+      }
+      $('#header').css('margin-top', '-80px');
+    } else if ($(window).scrollTop() < lastScrollTop) { // plus haut
+      console.log('on monte on affiche le header');
+      $('#header').css('margin-top', '0px');
+    }
+    lastScrollTop = $(window).scrollTop();
+  });
+
 
 });

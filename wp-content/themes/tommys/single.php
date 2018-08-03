@@ -16,15 +16,6 @@
 					<?php get_template_part('templates/list-info'); ?>
 				</div>
 			</section>
-			<section>
-				<?php
-					$commentActivated = comments_open();
-					if ( $commentActivated ) : ?>
-					<div class="post-comments">
-						<?php comments_template(); ?>
-					</div>
-				<?php endif; ?>
-			</section>
 		</div>
 	<?php endwhile; ?>
 <?php endif; ?>
