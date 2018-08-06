@@ -1,29 +1,43 @@
+<div class="row">
 
-<?php
-  if (have_posts()) :
-    ?> <div class="row"> <?php
-    while (have_posts()) :
-      the_post(); ?>
+  <?php
+    if (have_posts()) :
+      $index = 0;
+      while (have_posts()) :
+        if($index != 0 AND $index % 3 == 0) :
+          ?>
+            </div>
+            <div class="row">
+          <?php
+        endif;
+        $index += 1;
+        the_post(); ?>
 
-				<div class="article four columns">
-          <div class="day-article"><?php the_time('d') ?></div>
-          <div class="years-article"><?php the_time('M Y') ?></div>
-          <div class="thumbnail">
-            <?php
-              if(has_post_thumbnail()) { ?>
-                <div style="background: url('<?php echo get_the_post_thumbnail_url(); ?>')" class="thumbnail"/></div>
-              <?php } else { ?>
-                <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/noimage.png" class="thumbnail"></div>
-              <?php }
-            ?>
-          </div>
-					<div class="title-article">
-						<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-					</div>
-				</div>
+          <a class="article four columns" href="<?php the_permalink(); ?>">
+    				<div >
+              <div class="calendar">
+                <div class="day-article"><?php the_time('d') ?></div>
+                <div class="years-article"><?php the_time('M Y') ?></div>
+                <div class="holl one"></div>
+                <div class="holl two"></div>
+              </div>
+              <div class="thumbnail">
+                <?php
+                if(has_post_thumbnail()) { ?>
+                  <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/sail.png'), url('<?php echo get_the_post_thumbnail_url(); ?>')" class="thumbnail"/></div>
+                <?php } else { ?>
+                  <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/noimage.png')"; class="thumbnail"></div>
+                <?php } ?>
+              </div>
+    					<div class="title-article">
+    						<?php the_title(); ?>
+    					</div>
+    				</div>
+          </a>
 
-    	<?php
-  	endwhile;
-    ?> </div> <?php
-	endif;
-?>
+        <?php
+    	endwhile;
+  	endif;
+  ?>
+
+</div>

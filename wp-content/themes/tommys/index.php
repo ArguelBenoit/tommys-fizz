@@ -3,7 +3,7 @@
 	get_header();
 ?>
 
-<div class="container">
+<div class="container padding">
 	<?php get_template_part('templates/loop'); ?>
 </div>
 

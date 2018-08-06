@@ -4,7 +4,7 @@
 ?>
 
 
-<div class="container not-loop">
+<div class="container padding page first">
 	<h1>
 		<?php the_title(); ?>
 	</h1>

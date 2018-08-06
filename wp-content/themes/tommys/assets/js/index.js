@@ -23,6 +23,17 @@ $(document).ready(() => {
     headerSize();
   });
 
+
+  console.log($(document).height());
+  // article all time centred
+  if ($(document).height() < $(window).height()) {
+    console.log('tttt');
+    var heightArticle = $('.single-article').innerHeight();
+    var heightMargin = ( $(window).height() - heightArticle ) / 2;
+    $('.single-article').css('transform', 'translateY(' + heightMargin + 'px)');
+  }
+
+
   // sandwitch click
   $('#header').css('height', 80);
   $('#sandwich').click( () => {
@@ -37,6 +48,7 @@ $(document).ready(() => {
       $('#header').css('height', 80);
     }
   });
+
 
   // header scroll
   var scrollTop = $(window).scrollTop();
