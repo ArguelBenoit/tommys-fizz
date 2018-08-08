@@ -95,18 +95,14 @@ body form p textarea {
   background: #fefefe;
   box-shadow: 0 0 3px #ccc;
 }
-html input:-webkit-autofill,
-body input:-webkit-autofill,
-html textarea:-webkit-autofill,
-body textarea:-webkit-autofill,
-html select:-webkit-autofill,
-body select:-webkit-autofill {
-  background-color: #ddd !important;
-}
 .single {
   overflow: hidden;
 }
 .single img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   border-radius: 3px;
 }
 .single .date {

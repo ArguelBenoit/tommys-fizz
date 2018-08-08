@@ -76,17 +76,16 @@ html, body {
       box-shadow: 0 0 3px #ccc;
     }
   }
-  input:-webkit-autofill,
-  textarea:-webkit-autofill,
-  select:-webkit-autofill {
-    background-color: #ddd !important;
-  }
 }
 
 .single {
   overflow: hidden;
   img {
-    // max-width: 100%;
+    display: block;
+    max-width: 100%;
+    // max-height: 95px;
+    width: auto;
+    height: auto;
     border-radius: 3px;
   }
   .date { color: @colorLink; }
