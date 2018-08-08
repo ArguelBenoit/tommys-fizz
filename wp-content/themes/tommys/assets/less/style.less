@@ -14,7 +14,7 @@
 
 
 @colorLink: #ff8877;
-@blueLogo: #47517d;
+@blueLogo: #001159;
 @lighterGrey: #f3f3f3;
 @lightGrey: #ddd;
 @mediumGrey: #333;
@@ -29,11 +29,12 @@
 }
 
 
-
+html {
+  background: #181a1b;
+}
 html, body {
   margin: 0 0;
   padding: 0 0;
-  background: @lighterGrey;
   overflow-x: hidden;
   font-family: 'Archivo', sans-serif;
   a {
@@ -47,30 +48,49 @@ html, body {
     font-family: 'Playfair Display', serif;
     color: @blueLogo;
   }
-  .container.padding {
-    padding: 24px 24px 0 24px;
-    margin-bottom: 100px;
-    border-radius: 3px;
-    background: #fff;
+  .container {
+    width: 85% !important;
+    padding: 0 0;
+    &.padding {
+      padding: 24px 24px 0 24px;
+      margin-bottom: 130px;
+      border-radius: 3px;
+      background: #fff;
+    }
   }
   .container.first { margin-top: 140px; }
   .container.page, .container.single {
     padding-bottom: 24px;
   }
+  form p {
+    margin-bottom: 0px;
+    label {
+      color: @blueLogo;
+      font-family: 'Playfair Display', serif;
+    }
+    input[type=email], input[type=text], textarea {
+      margin-bottom: 0px;
+      width: 100%;
+      border: 0px;
+      background: #fefefe;
+      box-shadow: 0 0 3px #ccc;
+    }
+  }
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  select:-webkit-autofill {
+    background-color: #ddd !important;
+  }
 }
 
-
-
-#whitesail {
-  z-index: 100;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  pointer-events: none;
+.single {
+  overflow: hidden;
+  img {
+    // max-width: 100%;
+    border-radius: 3px;
+  }
+  .date { color: @colorLink; }
 }
-
-
 
 #header {
   box-shadow: 0 0 2px #ccc;
@@ -193,13 +213,51 @@ html, body {
   margin-bottom: 10px;
   li {
     font-family: 'Playfair Display', serif;
-    font-size: 18px;
+    font-size: 16px;
     float: left;
     list-style: none;
-    padding-right: 30px;
+    margin-right: 20px;
     &:last-child { padding-right: 0px;}
   }
 }
+
+
+
+.calendar {
+  .day-article {
+    font-family: 'Playfair Display', serif;
+    background: #fff;
+    width: 62px;
+    text-align: center;
+    font-size: 25px;
+    color: @colorLink;
+    border-radius: 3px 3px 0 0;
+  }
+  .years-article {
+    border-radius: 0 0 3px 3px;
+    background: #fff;
+    font-family: 'Archivo', sans-serif;
+    font-size: 11px;
+    color: #666;
+    width: 62px;
+    padding: 2px 0;
+    text-align: center;
+    border-top: dashed 0.5px #ddd;
+  }
+  .holl {
+    position: absolute;
+    top: -5px;
+    background: #fff;
+    width: 6px;
+    height: 12px;
+    border-radius: 4px;
+    border-left: 1px solid #bbb;
+    // border-right: 1px solid #ccc;
+    &.one { left: 15px; }
+    &.two { left: 41px; }
+  }
+}
+
 
 
 
@@ -241,36 +299,48 @@ html, body {
   .calendar {
     position: absolute;
     margin: 15px 0 0 15px;
-    .day-article {
-      background: #fff;
-      width: 62px;
+  }
+}
+
+.container-footer {
+  .menu-sn {
+    background: #fff;
+    border-top: 0.5px solid #eee;
+    ul {
+      padding: 0 0;
+      margin: 0 0;
       text-align: center;
-      font-size: 25px;
-      color: @colorLink;
-      border-radius: 3px 3px 0 0;
+      float: left;
+      li {
+        float: left;
+        list-style: none;
+        font-family: 'Playfair Display', serif;
+        padding: 18px 0;
+        margin: 0 24px 0 0;
+        text-align: left;
+        &:last-child { margin-right: 0px; }
+        a {
+          color: @colorLink;
+          font-size: 20px;
+          font-weight: regular;
+          &:hover {
+            color: @blueLogo;
+          }
+        }
+      }
     }
-    .years-article {
-      border-radius: 0 0 3px 3px;
-      background: #fff;
-      font-family: 'Archivo', sans-serif;
-      font-size: 11px;
-      color: #666;
-      width: 62px;
-      padding: 2px 0;
-      text-align: center;
-      border-top: dashed 0.5px #ddd;
-    }
-    .holl {
-      position: absolute;
-      top: -5px;
-      background: #fff;
-      width: 6px;
-      height: 12px;
-      border-radius: 4px;
-      border-left: 1px solid #bbb;
-      // border-right: 1px solid #ccc;
-      &.one { left: 15px; }
-      &.two { left: 41px; }
+  }
+  .footer {
+    background: #181a1b;
+    min-height: 200px;
+    padding: 40px 0;
+    h1, h2, h3, h4, h5, h6 { color: @colorLink; }
+    ul li { list-style: none; }
+    a {
+      color: #ccc;
+      &:hover {
+        margin-left: 5px;
+      }
     }
   }
 }

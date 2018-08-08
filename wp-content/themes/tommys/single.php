@@ -3,8 +3,8 @@
 
 	if (have_posts()) :
 		while (have_posts()) : the_post(); ?>
-		<div class="day-article"><?php the_time('d') ?></div>
 			<div class="container padding first single">
+				<div class="date"><?php the_date('d M Y') ?> <i class="far fa-calendar"></i></div>
 				<section>
 					<h1>
 						<?php the_title(); ?>

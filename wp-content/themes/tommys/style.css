@@ -14,11 +14,13 @@
     position: fixed !important;
   }
 }
+html {
+  background: #181a1b;
+}
 html,
 body {
   margin: 0 0;
   padding: 0 0;
-  background: #f3f3f3;
   overflow-x: hidden;
   font-family: 'Archivo', sans-serif;
 }
@@ -26,7 +28,7 @@ html a,
 body a {
   text-decoration: none;
   font-weight: bolder;
-  color: #47517d;
+  color: #001159;
   transition-duration: 300ms;
 }
 html a:hover,
@@ -48,12 +50,17 @@ body h5,
 html h6,
 body h6 {
   font-family: 'Playfair Display', serif;
-  color: #47517d;
+  color: #001159;
+}
+html .container,
+body .container {
+  width: 85% !important;
+  padding: 0 0;
 }
 html .container.padding,
 body .container.padding {
   padding: 24px 24px 0 24px;
-  margin-bottom: 100px;
+  margin-bottom: 130px;
   border-radius: 3px;
   background: #fff;
 }
@@ -67,13 +74,43 @@ html .container.single,
 body .container.single {
   padding-bottom: 24px;
 }
-#whitesail {
-  z-index: 100;
-  position: fixed;
-  height: 100%;
+html form p,
+body form p {
+  margin-bottom: 0px;
+}
+html form p label,
+body form p label {
+  color: #001159;
+  font-family: 'Playfair Display', serif;
+}
+html form p input[type=email],
+body form p input[type=email],
+html form p input[type=text],
+body form p input[type=text],
+html form p textarea,
+body form p textarea {
+  margin-bottom: 0px;
   width: 100%;
-  background: #fff;
-  pointer-events: none;
+  border: 0px;
+  background: #fefefe;
+  box-shadow: 0 0 3px #ccc;
+}
+html input:-webkit-autofill,
+body input:-webkit-autofill,
+html textarea:-webkit-autofill,
+body textarea:-webkit-autofill,
+html select:-webkit-autofill,
+body select:-webkit-autofill {
+  background-color: #ddd !important;
+}
+.single {
+  overflow: hidden;
+}
+.single img {
+  border-radius: 3px;
+}
+.single .date {
+  color: #ff8877;
 }
 #header {
   box-shadow: 0 0 2px #ccc;
@@ -105,7 +142,7 @@ body .container.single {
   margin: 0 0;
 }
 #header #menu-header ul li a {
-  color: #47517d;
+  color: #001159;
   transition-duration: 150ms;
 }
 #header #menu-header ul li a:hover {
@@ -124,7 +161,7 @@ body .container.single {
   height: 2px;
   border-radius: 1px;
   width: 40px;
-  background: #47517d;
+  background: #001159;
   position: absolute;
 }
 #header #sandwich .child.child1 {
@@ -210,13 +247,48 @@ body .container.single {
 }
 .menu-category ul li {
   font-family: 'Playfair Display', serif;
-  font-size: 18px;
+  font-size: 16px;
   float: left;
   list-style: none;
-  padding-right: 30px;
+  margin-right: 20px;
 }
 .menu-category ul li:last-child {
   padding-right: 0px;
+}
+.calendar .day-article {
+  font-family: 'Playfair Display', serif;
+  background: #fff;
+  width: 62px;
+  text-align: center;
+  font-size: 25px;
+  color: #ff8877;
+  border-radius: 3px 3px 0 0;
+}
+.calendar .years-article {
+  border-radius: 0 0 3px 3px;
+  background: #fff;
+  font-family: 'Archivo', sans-serif;
+  font-size: 11px;
+  color: #666;
+  width: 62px;
+  padding: 2px 0;
+  text-align: center;
+  border-top: dashed 0.5px #ddd;
+}
+.calendar .holl {
+  position: absolute;
+  top: -5px;
+  background: #fff;
+  width: 6px;
+  height: 12px;
+  border-radius: 4px;
+  border-left: 1px solid #bbb;
+}
+.calendar .holl.one {
+  left: 15px;
+}
+.calendar .holl.two {
+  left: 41px;
 }
 .article {
   background: white;
@@ -259,37 +331,54 @@ body .container.single {
   position: absolute;
   margin: 15px 0 0 15px;
 }
-.article .calendar .day-article {
+.container-footer .menu-sn {
   background: #fff;
-  width: 62px;
+  border-top: 0.5px solid #eee;
+}
+.container-footer .menu-sn ul {
+  padding: 0 0;
+  margin: 0 0;
   text-align: center;
-  font-size: 25px;
+  float: left;
+}
+.container-footer .menu-sn ul li {
+  float: left;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+  padding: 18px 0;
+  margin: 0 24px 0 0;
+  text-align: left;
+}
+.container-footer .menu-sn ul li:last-child {
+  margin-right: 0px;
+}
+.container-footer .menu-sn ul li a {
   color: #ff8877;
-  border-radius: 3px 3px 0 0;
+  font-size: 20px;
+  font-weight: regular;
 }
-.article .calendar .years-article {
-  border-radius: 0 0 3px 3px;
-  background: #fff;
-  font-family: 'Archivo', sans-serif;
-  font-size: 11px;
-  color: #666;
-  width: 62px;
-  padding: 2px 0;
-  text-align: center;
-  border-top: dashed 0.5px #ddd;
+.container-footer .menu-sn ul li a:hover {
+  color: #001159;
 }
-.article .calendar .holl {
-  position: absolute;
-  top: -5px;
-  background: #fff;
-  width: 6px;
-  height: 12px;
-  border-radius: 4px;
-  border-left: 1px solid #bbb;
+.container-footer .footer {
+  background: #181a1b;
+  min-height: 200px;
+  padding: 40px 0;
 }
-.article .calendar .holl.one {
-  left: 15px;
+.container-footer .footer h1,
+.container-footer .footer h2,
+.container-footer .footer h3,
+.container-footer .footer h4,
+.container-footer .footer h5,
+.container-footer .footer h6 {
+  color: #ff8877;
 }
-.article .calendar .holl.two {
-  left: 41px;
+.container-footer .footer ul li {
+  list-style: none;
+}
+.container-footer .footer a {
+  color: #ccc;
+}
+.container-footer .footer a:hover {
+  margin-left: 5px;
 }

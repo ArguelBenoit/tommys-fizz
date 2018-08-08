@@ -12,9 +12,7 @@
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/index.js"></script>
 		<?php wp_head(); ?>
 	</head>
-	<body>
-
-	<div id="whitesail"></div>
+	<body style="background-image: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/background.png');">
 
 	<?php
 		get_header();

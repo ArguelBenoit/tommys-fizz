@@ -5,7 +5,10 @@
     register_nav_menu('main_menu', 'menu principale');
   }
   register_nav_menus( array(
-  	'category_menu' => 'menu des catégories'
+  	'category_menu' => 'menu des catégories',
+  	'social_network_menu' => 'menu des réseaux sociaux',
+  	'footer_menu' => 'menu du footer',
+  	'bar_menu' => 'menu des bars',
   ) );
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'custom-logo' );
