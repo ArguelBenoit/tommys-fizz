@@ -28,6 +28,14 @@
   }
 }
 
+#whitesail {
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  pointer-events: none;
+}
 
 html {
   background: #181a1b;
@@ -36,16 +44,19 @@ html, body {
   margin: 0 0;
   padding: 0 0;
   overflow-x: hidden;
-  font-family: 'Archivo', sans-serif;
+  font-family: 'Rubik', sans-serif;
   a {
     text-decoration: none;
     font-weight: bolder;
     color: @blueLogo;
     transition-duration: 300ms;
-    &:hover { color: @colorLink; }
+    &:hover {
+      transition-duration: 300ms;
+      color: @colorLink;
+    }
   }
   h1, h2, h3, h4, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arvo', serif;;
     color: @blueLogo;
   }
   .container {
@@ -66,7 +77,7 @@ html, body {
     margin-bottom: 0px;
     label {
       color: @blueLogo;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Arvo', serif;;
     }
     input[type=email], input[type=text], textarea {
       margin-bottom: 0px;
@@ -83,7 +94,7 @@ html, body {
   img {
     display: block;
     max-width: 100%;
-    // max-height: 95px;
+    // max-height: 95psx;
     width: auto;
     height: auto;
     border-radius: 3px;
@@ -108,7 +119,7 @@ html, body {
     float: right;
     font-size: 18px;
     margin: 0 0;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arvo', serif;;
     font-weight: regular;
     li {
       text-transform: uppercase;
@@ -119,8 +130,10 @@ html, body {
       margin: 0 0;
       a {
         color: @blueLogo;
-        transition-duration: 150ms;
-        &:hover { color: @colorLink; }
+        transition-duration: 200ms;
+        &:hover {
+          color: @colorLink;
+        }
       }
     }
   }
@@ -197,7 +210,7 @@ html, body {
   &.prev { left: 5px; }
   &.next { right: 5px; }
   a i {
-    font-size: 23px;
+    font-size: 21.5px;
     margin-top: 6px;
   }
   a,
@@ -211,7 +224,7 @@ html, body {
   margin: 0 0;
   margin-bottom: 10px;
   li {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arvo', serif;;
     font-size: 16px;
     float: left;
     list-style: none;
@@ -224,7 +237,7 @@ html, body {
 
 .calendar {
   .day-article {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Arvo', serif;;
     background: #fff;
     width: 62px;
     text-align: center;
@@ -235,7 +248,7 @@ html, body {
   .years-article {
     border-radius: 0 0 3px 3px;
     background: #fff;
-    font-family: 'Archivo', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 11px;
     color: #666;
     width: 62px;
@@ -251,7 +264,6 @@ html, body {
     height: 12px;
     border-radius: 4px;
     border-left: 1px solid #bbb;
-    // border-right: 1px solid #ccc;
     &.one { left: 15px; }
     &.two { left: 41px; }
   }
@@ -264,7 +276,7 @@ html, body {
   background: white;
   margin-bottom: 24px;
   height: inherit;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Arvo', serif;;
   border-radius: 3px;
   overflow: hidden;
   transition-duration: 400ms;
@@ -313,7 +325,7 @@ html, body {
       li {
         float: left;
         list-style: none;
-        font-family: 'Playfair Display', serif;
+        font-family: 'Arvo', serif;;
         padding: 18px 0;
         margin: 0 24px 0 0;
         text-align: left;
@@ -334,12 +346,103 @@ html, body {
     min-height: 200px;
     padding: 40px 0;
     h1, h2, h3, h4, h5, h6 { color: @colorLink; }
-    ul li { list-style: none; }
+    ul {
+      padding-left: 10px;
+      li {
+        list-style: none;
+      }
+    }
     a {
       color: #ccc;
+      &:before {
+        font-family: FontAwesome;
+        content: "\f061 ";
+        color: #ff8877;
+        font-size: 14px;
+        margin-right: 10px;
+      }
       &:hover {
         margin-left: 5px;
       }
     }
   }
+}
+
+
+
+
+#landing-page {
+  .container-rellax {
+    overflow: hidden;
+  }
+  #homepage {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    #content-homepage {
+      position: absolute;
+      width: 350px;
+      top: 50%;
+      left: 50%;
+      margin-left: -175px;
+      margin-top: -175px;
+      img { width: 350px; }
+      h1 {
+        padding-top: 15px;
+        font-size: 30px;
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+      }
+      @media screen and (max-width: 600px) {
+        margin-left: -125px;
+        margin-top: -100px;
+        width: 250px;
+        img {
+          width: 250px;
+          top: 50%;
+          left: 50%;
+        }
+        h1 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  #prestations, #consulting {
+    padding: 80px 0 0 0;
+    h1 { color: @colorLink; }
+    .columns {
+      margin-bottom: 40px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      vertical-align: middle;
+      border-radius: 3px;
+      border: 8px solid #fff;
+      box-shadow: 0 0 4px #ccc;
+      box-sizing: border-box;
+    }
+    .row { padding: 30px 0; }
+    ul {
+      padding-left: 18px;
+      li {
+        list-style: none;
+        margin-bottom: 5px;
+        &:before {
+          font-family: FontAwesome;
+          content: "\f061 ";
+          color: #ff8877;
+          font-size: 15px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  #prestations { background: linear-gradient(45deg, #eee, #fff); }
+  #consulting { background: #fff; }
 }

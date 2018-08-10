@@ -1,10 +1,28 @@
 import $ from 'jquery';
+import Rellax from 'rellax';
 
 
 $(document).ready(() => {
 
+
   // after loading
   setTimeout(() => $('#whitesail').fadeOut(800), 250);
+
+
+  // a clicked animations
+  $('a').click( e => {
+    let href = e.currentTarget.attributes.href.value;
+    if (href[1] === '#') {
+      let hrefToId = href.substring(1, href.length);
+      let topDiv = $(hrefToId).position().top;
+      $('html, body').animate({ scrollTop: topDiv }, 'slow');
+    } else {
+      $('#whitesail').fadeIn(600);
+      setTimeout( () => window.location.href = href, 800);
+    }
+    e.preventDefault();
+  });
+
 
   // resize menu
   const menuWidth = $('#menu-header ul').innerWidth();
@@ -44,7 +62,7 @@ $(document).ready(() => {
   var scrollTop = $(window).scrollTop();
   var lastScrollTop = scrollTop;
   $(window).scroll( () => {
-    if (lastScrollTop < 400) {
+    if (lastScrollTop < 100) {
       $('#header').css('margin-top', '0px');
     } else if ($(window).scrollTop() > lastScrollTop) { // plus bas
       if($('#header').hasClass('open')) {
@@ -73,4 +91,9 @@ $(document).ready(() => {
   $(window).resize(() => {
     $('.thumbnail').css('height', $('.thumbnail').width() + 'px');
   });
+
+
+
+  // LandingPage
+  new Rellax('.rellax', {});
 });
