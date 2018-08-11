@@ -9,7 +9,7 @@
     $logo_url = wp_get_attachment_image_src( $custom_logo_id , 'full' );
     if ( !empty($logo_url[0])) {
       ?>
-        <a href="/#homepage">
+        <a href="/#anchor">
           <img id="logo-header" src=<?php echo esc_url( $logo_url[0] ); ?> alt="" height="54px"/>
         </a>
       <?php

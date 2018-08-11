@@ -72,6 +72,7 @@ body .container.padding {
   margin-bottom: 130px;
   border-radius: 3px;
   background: #fff;
+  box-shadow: 0 0 3px #ccc;
 }
 html .container.first,
 body .container.first {
@@ -358,9 +359,12 @@ body form p textarea {
   margin-right: 0px;
 }
 .container-footer .menu-sn ul li a {
-  color: #ff8877;
+  color: #001159;
   font-size: 20px;
   font-weight: regular;
+}
+.container-footer .menu-sn ul li a i {
+  color: #ff8877;
 }
 .container-footer .menu-sn ul li a:hover {
   color: #001159;
@@ -441,7 +445,7 @@ body form p textarea {
 }
 #landing-page #prestations,
 #landing-page #consulting {
-  padding: 80px 0 0 0;
+  padding: 120px 0 0 0;
 }
 #landing-page #prestations h1,
 #landing-page #consulting h1 {
@@ -449,7 +453,7 @@ body form p textarea {
 }
 #landing-page #prestations .columns,
 #landing-page #consulting .columns {
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 #landing-page #prestations img,
 #landing-page #consulting img {
@@ -465,7 +469,7 @@ body form p textarea {
 }
 #landing-page #prestations .row,
 #landing-page #consulting .row {
-  padding: 30px 0;
+  padding: 60px 0;
 }
 #landing-page #prestations ul,
 #landing-page #consulting ul {
@@ -489,4 +493,54 @@ body form p textarea {
 }
 #landing-page #consulting {
   background: #fff;
+}
+#landing-page #team {
+  padding: 150px 0 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#landing-page #team h1 {
+  padding-bottom: 60px;
+  text-align: center;
+  color: #ff8877;
+}
+#landing-page #team .people-container {
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 3px;
+}
+#landing-page #team .people-container div.img {
+  width: 100%;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+#landing-page #team .people-container .name {
+  background: #f5f5f5;
+  padding: 14px 0;
+  font-size: 14px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+}
+#landing-page #partenaires {
+  padding: 120px 0 150px 0;
+}
+#landing-page #partenaires img {
+  margin: auto;
+  max-width: 200px;
+  display: block;
+  margin-bottom: 40px;
+}
+#landing-page #partenaires .row {
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+#landing-page #partenaires h2 {
+  text-align: center;
+  padding-bottom: 50px;
 }

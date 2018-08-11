@@ -12,7 +12,7 @@ $(document).ready(() => {
   // a clicked animations
   $('a').click( e => {
     let href = e.currentTarget.attributes.href.value;
-    if (href[1] === '#') {
+    if (href[1] === '#' && location.search === '') {
       let hrefToId = href.substring(1, href.length);
       let topDiv = $(hrefToId).position().top;
       $('html, body').animate({ scrollTop: topDiv }, 'slow');
@@ -86,14 +86,17 @@ $(document).ready(() => {
 
 
 
-  // article thumbnails squar alltime
+  // article and team thumbnails squar alltime
   $('.thumbnail').css('height', $('.thumbnail').width() + 'px');
+  $('.people-container .img').css('height', $('.people-container .img').width() + 'px');
   $(window).resize(() => {
     $('.thumbnail').css('height', $('.thumbnail').width() + 'px');
+    $('.people-container .img').css('height', $('.people-container .img').width() + 'px');
   });
 
 
-
-  // LandingPage
-  new Rellax('.rellax', {});
+  // parallax LandingPage
+  if($('.rellax').length) {
+    new Rellax('.rellax', {});
+  }
 });

@@ -13,7 +13,7 @@
 		<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/index.js"></script>
 		<?php wp_head(); ?>
 	</head>
-	<body style="background: linear-gradient(45deg, #dedede, #fefefe);">
+	<body id="anchor" style="background: linear-gradient(45deg, #dedede, #fefefe);">
 	<div id="whitesail"></div>
 
 	<?php
