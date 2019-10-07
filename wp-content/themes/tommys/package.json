@@ -30,7 +30,7 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.4.0",
     "parabox.js": "^2.0.2",
     "rellax": "^1.6.2"
   }
