@@ -8,7 +8,7 @@
   	'category_menu' => 'menu des catégories',
   	'social_network_menu' => 'menu des réseaux sociaux',
   	'footer_menu' => 'menu du footer',
-  	'bar_menu' => 'menu des bars',
+    'contacts_menu' => 'menu contacts',
   ) );
   add_theme_support( 'post-thumbnails' );
   add_theme_support( 'custom-logo' );

@@ -14,7 +14,7 @@ $(document).ready(() => {
     let href = e.currentTarget.attributes.href.value;
     if (href[1] === '#' && location.search === '') {
       let hrefToId = href.substring(1, href.length);
-      let topDiv = $(hrefToId).position().top;
+      let topDiv = $(hrefToId).position().top - 80; // 80 = header height
       $('html, body').animate({ scrollTop: topDiv }, 'slow');
     } else {
       $('#whitesail').fadeIn(600);

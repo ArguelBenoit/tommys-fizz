@@ -388,6 +388,17 @@ body form p textarea {
 .container-footer .footer ul li {
   list-style: none;
 }
+.container-footer .footer ul.sub-menu {
+  margin: 5px 0 5px 5px;
+}
+.container-footer .footer ul.sub-menu li {
+  margin-bottom: 2px;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.container-footer .footer ul.sub-menu li a:before {
+  content: "\f0da ";
+}
 .container-footer .footer a {
   color: #ccc;
 }
@@ -443,20 +454,24 @@ body form p textarea {
     font-size: 20px;
   }
 }
-#landing-page #prestations,
-#landing-page #consulting {
+#landing-page #prestations {
   padding: 120px 0 0 0;
 }
-#landing-page #prestations h1,
-#landing-page #consulting h1 {
+#landing-page #prestations h1 {
   color: #ff8877;
 }
-#landing-page #prestations .columns,
-#landing-page #consulting .columns {
+#landing-page #prestations .columns {
   margin-bottom: 60px;
 }
-#landing-page #prestations img,
-#landing-page #consulting img {
+#landing-page #prestations button {
+  border-radius: 20px;
+  border: none !important;
+  margin-right: 12px;
+}
+#landing-page #prestations button:hover {
+  box-shadow: 0 0 12px #ccc;
+}
+#landing-page #prestations img {
   display: block;
   max-width: 100%;
   width: auto;
@@ -464,41 +479,20 @@ body form p textarea {
   vertical-align: middle;
   border-radius: 3px;
   border: 8px solid #fff;
-  box-shadow: 0 0 4px #ccc;
+  box-shadow: 30px 40px 60px #f0ecec;
   box-sizing: border-box;
 }
-#landing-page #prestations .row,
-#landing-page #consulting .row {
+#landing-page #prestations .row {
   padding: 60px 0;
-}
-#landing-page #prestations ul,
-#landing-page #consulting ul {
-  padding-left: 18px;
-}
-#landing-page #prestations ul li,
-#landing-page #consulting ul li {
-  list-style: none;
-  margin-bottom: 5px;
-}
-#landing-page #prestations ul li:before,
-#landing-page #consulting ul li:before {
-  font-family: FontAwesome;
-  content: "\f061 ";
-  color: #ff8877;
-  font-size: 15px;
-  margin-right: 10px;
 }
 #landing-page #prestations {
   background: linear-gradient(45deg, #eee, #fff);
 }
-#landing-page #consulting {
-  background: #fff;
-}
 #landing-page #team {
-  padding: 150px 0 100px 0;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 150px 0 150px 0;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 #landing-page #team h1 {
   padding-bottom: 60px;

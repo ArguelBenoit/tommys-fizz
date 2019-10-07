@@ -23,7 +23,7 @@ sh dump.sh
 ### Example:
 ```
 docker-compose start db && docker-compose exec db bash
-cd /data
+cd /sh
 chmod +x restore.sh
 sh restore.sh
 ```

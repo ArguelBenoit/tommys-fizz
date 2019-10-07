@@ -355,6 +355,17 @@ html, body {
       li {
         list-style: none;
       }
+      &.sub-menu {
+        margin: 5px 0 5px 5px;
+        li {
+          margin-bottom: 2px;
+          font-weight: lighter;
+          opacity: 0.8;
+          a:before {
+            content: "\f0da ";
+          }
+        }
+      }
     }
     a {
       color: #ccc;
@@ -414,11 +425,19 @@ html, body {
       }
     }
   }
-  #prestations, #consulting {
+  #prestations {
     padding: 120px 0 0 0;
     h1 { color: @colorLink; }
     .columns {
       margin-bottom: 60px;
+    }
+    button {
+      border-radius: 20px;
+      border: none !important;
+      margin-right: 12px;
+      &:hover {
+        box-shadow: 0 0 12px #ccc;
+      }
     }
     img {
       display: block;
@@ -428,32 +447,19 @@ html, body {
       vertical-align: middle;
       border-radius: 3px;
       border: 8px solid #fff;
-      box-shadow: 0 0 4px #ccc;
+      box-shadow: 30px 40px 60px #f0ecec;
       box-sizing: border-box;
     }
     .row { padding: 60px 0; }
-    ul {
-      padding-left: 18px;
-      li {
-        list-style: none;
-        margin-bottom: 5px;
-        &:before {
-          font-family: FontAwesome;
-          content: "\f061 ";
-          color: #ff8877;
-          font-size: 15px;
-          margin-right: 10px;
-        }
-      }
-    }
   }
-  #prestations { background: linear-gradient(45deg, #eee, #fff); }
-  #consulting { background: #fff; }
+  #prestations {
+    background: linear-gradient(45deg, #eee, #fff);
+  }
   #team {
-    padding: 150px 0 100px 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 150px 0 150px 0;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     h1 {
       padding-bottom: 60px;
       text-align: center;

@@ -18,8 +18,8 @@
               <?php wp_nav_menu(array('theme_location' => 'footer_menu')); ?>
             </div>
             <div class="columns five bars">
-              <h4>Nos établissements</h4>
-              <?php wp_nav_menu(array('theme_location' => 'bar_menu')); ?>
+              <h4>Contacts</h4>
+              <?php wp_nav_menu(array('theme_location' => 'contacts_menu')); ?>
             </div>
           </div>
         </div>
