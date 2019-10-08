@@ -452,8 +452,13 @@ html, body {
     }
     .row { padding: 60px 0; }
   }
-  #prestations {
+  #prestations, #prestations-particuliers, #prestations-professionnels {
     background: linear-gradient(45deg, #eee, #fff);
+  }
+  #prestations-particuliers, #prestations-professionnels {
+    .container {
+      padding: 120px 0px;
+    }
   }
   #team {
     padding: 150px 0 150px 0;
@@ -480,7 +485,6 @@ html, body {
         padding: 14px 0;
         font-size: 14px;
         color: black;
-        font-weight: bold;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;

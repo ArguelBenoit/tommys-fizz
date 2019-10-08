@@ -95,6 +95,47 @@ $(document).ready(() => {
   });
 
 
+
+  // ouverture des deux sections pro et particuliers
+  var particulierOpen = false;
+  var professionnelsOpen = false;
+  var heightParticulier = $('#prestations-particuliers .container').innerHeight() + 'px';
+  var heightProfessionnels = $('#prestations-professionnels .container').innerHeight() + 'px';
+  $('#button-prestations-particuliers').click(() => {
+    console.log(heightParticulier);
+    if (!particulierOpen && !professionnelsOpen) {
+      particulierOpen = true;
+      $('#prestations-particuliers').css('height', heightParticulier);
+    } else if (particulierOpen && !professionnelsOpen) {
+      particulierOpen = false;
+      $('#prestations-particuliers').css('height', '0px');
+    } else if (!particulierOpen && professionnelsOpen) {
+      particulierOpen = true;
+      professionnelsOpen = false;
+      $('#prestations-professionnels').css('height', '0px');
+      setTimeout(() => {
+        $('#prestations-particuliers').css('height', heightParticulier);
+      },750);
+    }
+  });
+  $('#button-prestations-professionnels').click(() => {
+    if (!professionnelsOpen && !particulierOpen) {
+      professionnelsOpen = true;
+      $('#prestations-professionnels').css('height', heightProfessionnels);
+    } else if (professionnelsOpen && !particulierOpen) {
+      professionnelsOpen = false;
+      $('#prestations-professionnels').css('height', '0px');
+    } else if (!professionnelsOpen && particulierOpen) {
+      particulierOpen = false;
+      professionnelsOpen = true;
+      $('#prestations-particuliers').css('height', '0px');
+      setTimeout(() => {
+        $('#prestations-professionnels').css('height', heightProfessionnels);
+      },500);
+    }
+  });
+
+
   // parallax LandingPage
   if($('.rellax').length) {
     new Rellax('.rellax', {});

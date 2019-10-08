@@ -485,8 +485,14 @@ body form p textarea {
 #landing-page #prestations .row {
   padding: 60px 0;
 }
-#landing-page #prestations {
+#landing-page #prestations,
+#landing-page #prestations-particuliers,
+#landing-page #prestations-professionnels {
   background: linear-gradient(45deg, #eee, #fff);
+}
+#landing-page #prestations-particuliers .container,
+#landing-page #prestations-professionnels .container {
+  padding: 120px 0px;
 }
 #landing-page #team {
   padding: 150px 0 150px 0;
@@ -515,7 +521,6 @@ body form p textarea {
   padding: 14px 0;
   font-size: 14px;
   color: black;
-  font-weight: bold;
   text-align: center;
   overflow: hidden;
   text-overflow: ellipsis;
