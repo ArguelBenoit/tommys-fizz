@@ -107,7 +107,7 @@
 	<!--  -->
 	<section id="team" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/background2.jpg');">
 		<div class="container">
-			<h1>_ THE _ TEAM _</h1>
+			<h1>L'équipe</h1>
 			<div class="row">
 				<div class="columns two">
 					<br/>
@@ -154,21 +154,32 @@
 					</div>
 				</div>
 			</div>
+			<div class="row" style="margin-top: 60px;">
+				<div class="columns two">
+					&nbsp;
+				</div>
+				<div class="columns eight">
+					<img width="100%" style="border-radius: 6px;" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/all.jpg" alt="">
+				</div>
+				<div class="columns two">
+					&nbsp;
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--  -->
 	<section id="partenaires">
-			<h2>Ils nous font confiance</h2>
+			<h2>Ils nous ont fait confiance</h2>
 			<div class="container">
 				<div class="arrow-nav prev" id="landingpage-prev"><i class="icon-prev fa fa-arrow-left"></i></div>
 				<div class="container-img" id="container-img">
 					<div class="container-img-wrapper" id="container-img-wrapper">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/0.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/1.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/5.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/2.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/3.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/4.png" alt="">
-						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/5.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/6.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/7.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/8.png" alt="">
