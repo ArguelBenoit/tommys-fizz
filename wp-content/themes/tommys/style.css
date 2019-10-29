@@ -455,23 +455,42 @@ body form p textarea {
   }
 }
 #landing-page #prestations {
-  padding: 120px 0 0 0;
+  padding: 120px 0;
 }
-#landing-page #prestations h1 {
+#landing-page #prestations-particuliers .container,
+#landing-page #prestations-professionnels .container {
+  padding: 120px 0;
+}
+#landing-page #prestations,
+#landing-page #prestations-particuliers,
+#landing-page #prestations-professionnels {
+  background: linear-gradient(45deg, #eee, #fff);
+}
+#landing-page #prestations h1,
+#landing-page #prestations-particuliers h1,
+#landing-page #prestations-professionnels h1 {
   color: #ff8877;
 }
-#landing-page #prestations .columns {
+#landing-page #prestations .columns,
+#landing-page #prestations-particuliers .columns,
+#landing-page #prestations-professionnels .columns {
   margin-bottom: 60px;
 }
-#landing-page #prestations button {
+#landing-page #prestations button,
+#landing-page #prestations-particuliers button,
+#landing-page #prestations-professionnels button {
   border-radius: 20px;
   border: none !important;
   margin-right: 12px;
 }
-#landing-page #prestations button:hover {
+#landing-page #prestations button:hover,
+#landing-page #prestations-particuliers button:hover,
+#landing-page #prestations-professionnels button:hover {
   box-shadow: 0 0 12px #ccc;
 }
-#landing-page #prestations img {
+#landing-page #prestations img,
+#landing-page #prestations-particuliers img,
+#landing-page #prestations-professionnels img {
   display: block;
   max-width: 100%;
   width: auto;
@@ -482,17 +501,10 @@ body form p textarea {
   box-shadow: 30px 40px 60px #f0ecec;
   box-sizing: border-box;
 }
-#landing-page #prestations .row {
-  padding: 60px 0;
-}
-#landing-page #prestations,
-#landing-page #prestations-particuliers,
-#landing-page #prestations-professionnels {
-  background: linear-gradient(45deg, #eee, #fff);
-}
-#landing-page #prestations-particuliers .container,
-#landing-page #prestations-professionnels .container {
-  padding: 120px 0px;
+#landing-page #prestations .row,
+#landing-page #prestations-particuliers .row,
+#landing-page #prestations-professionnels .row {
+  padding: 60px 0 0 0;
 }
 #landing-page #team {
   padding: 150px 0 150px 0;
@@ -527,19 +539,45 @@ body form p textarea {
   text-transform: uppercase;
 }
 #landing-page #partenaires {
-  padding: 120px 0 150px 0;
-}
-#landing-page #partenaires img {
-  margin: auto;
-  max-width: 200px;
   display: block;
-  margin-bottom: 40px;
-}
-#landing-page #partenaires .row {
-  opacity: 0.7;
-  margin-bottom: 30px;
+  padding: 120px 0 150px 0;
 }
 #landing-page #partenaires h2 {
   text-align: center;
   padding-bottom: 50px;
+}
+#landing-page #partenaires .container .arrow-nav {
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+}
+#landing-page #partenaires .container .arrow-nav:hover {
+  transform: scale(1.1);
+}
+#landing-page #partenaires .container .arrow-nav i {
+  font-size: 21.5px;
+  margin-top: 6px;
+}
+#landing-page #partenaires .container .arrow-nav.prev {
+  transform: translateX(-20px);
+  display: none;
+}
+#landing-page #partenaires .container .arrow-nav.next {
+  right: 0px;
+  transform: translateX(20px);
+}
+#landing-page #partenaires .container-img {
+  overflow: hidden;
+}
+#landing-page #partenaires .container-img .container-img-wrapper {
+  transition-duration: 2500ms;
+  margin-left: -20px;
+  width: 5520px;
+  display: flex;
+  align-items: center;
+}
+#landing-page #partenaires .container-img .container-img-wrapper img {
+  border-radius: 4px;
+  max-width: 200px;
+  margin: 20px;
 }

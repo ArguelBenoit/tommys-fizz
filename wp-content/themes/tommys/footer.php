@@ -11,7 +11,7 @@
         <div class="container">
           <div class="row">
             <div class="columns four">
-               <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-white.png" width="100%" alt="">
+               <img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo/logo-white.png" width="100%" alt="">
             </div>
             <div class="columns three">
               <h4>Site map</h4>

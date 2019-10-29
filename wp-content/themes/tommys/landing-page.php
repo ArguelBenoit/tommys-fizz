@@ -1,30 +1,14 @@
 
-<!-- <!doctype html>
-<html>
-	<head>
-		<meta charset="utf-8"/>
-		<meta name='viewport' content='initial-scale=1,maximum-scale=1' />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
-		<link rel="stylesheet" href="style.css" />
-		<title>version sans php</title>
-		<script type="text/javascript" src="index.js"></script>
-	</head>
-	<body id="anchor" style="background: linear-gradient(45deg, #dedede, #fefefe);">
-	<div id="whitesail"></div> -->
-
 <?php /* Template Name: Landing-page */
 	get_header();
 ?>
 
 <div id="landing-page">
 	<div class="container-rellax">
-		<section class="rellax" data-rellax-speed="-10" id="homepage" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/background.jpg');">
+		<section class="rellax" data-rellax-speed="-10" id="homepage" style="background-image: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/background.jpg');">
 			<div class="rellax" data-rellax-speed="10" id="content-homepage">
-				<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-white.png" width="400px" alt="">
-				<h1>Ici il y aura un super petit slogan !</h1>
+				<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo/logo-white.png" width="400px" alt="">
+				<h1>L'art du cocktail</h1>
 			</div>
 		</section>
 	</div>
@@ -40,14 +24,14 @@
 	<!--  -->
 	<section class="" id="prestations">
 		<div class="container">
-			<h1>Nos préstations</h1>
+			<h1>Nos prestations</h1>
 			<div class="row">
 				<div class="columns six">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/cocktail.jpg" width="400px" alt="">
+					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/cocktail.jpg" width="400px" alt="">
 				</div>
 				<div class="columns six">
 					<p>Afin de répondre à vos envies nous vous proposons un bar mobile, complètement autonome qui nous suit partout. Élément décoratif et lieu de convivialité autour d’un de nos fabuleux cocktails, il rendra votre événement inoubliable.</p>
-					<p><b>Afficher les préstations :</b></p>
+					<p><b>Afficher les prestations :</b></p>
 					<button id="button-prestations-particuliers" class="button-primary" style="background: #ff8877">Particuliers</button>
 					<button id="button-prestations-professionnels" class="button-primary" style="background: #ff8877">Professionnels</button>
 				</div>
@@ -57,7 +41,7 @@
 	<!--  -->
 	<section class="" id="prestations-particuliers" style="height: 0px; overflow: hidden; transition-duration: 500ms">
 		<div class="container">
-			<h1>Réception privées</h1>
+			<h1>Pour vos événements</h1>
 			<div class="row">
 				<div class="columns six">
 					<p>
@@ -67,15 +51,12 @@
 					</p>
 				</div>
 				<div class="columns six">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/cocktail.jpg" width="400px" alt="">
+					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/prestation-prive.jpg" width="400px" alt="">
 				</div>
 			</div>
 			<div class="row">
-				<div class="columns six">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/cocktail.jpg" width="400px" alt="">
-				</div>
-				<div class="columns six">
-					<h3>Cette prestation vous permet de respirer.</h3>
+				<h3>Cette prestation vous permet de respirer.</h3>
+				<div class="row">
 					<p>
 						Nos produits et nos partenaires sont choisis avec le plus grand soin et nous leur faisons confiance. Nous travaillons local, naturel et avec du fait maison pour vous offrir une entière satisfaction.<br/><br/>
 						Prêt à être éblouis ?
@@ -87,50 +68,44 @@
 	<!--  -->
 	<section class="" id="prestations-professionnels" style="height: 0px; overflow: hidden; transition-duration: 750ms">
 		<div class="container">
-			<h1>Événement en entreprise</h1>
-			<p>
-				Un besoin pour une soirée de lancement de produits, une rencontre entre collaborateurs ou toute autre occasion à célébrer dans votre entreprise ?<br/><br/>
-				Nous sommes là pour répondre à vos envies.Une prestation haut de gamme de création de cocktails adaptés à vos besoins, personnalisables à l’infini afin de respecter votre cahier des charges. Des produits de grande qualité sélectionnés par nos soins, des préparations maisons afin de vous offrir le meilleur des ingrédients. Vos cocktails reflèteront votre entreprise, pour mettre en avant votre marque, votre positionnement, pour un petit plus original dans votre stratégie de communication.<br/><br/>
-				Cette prestation peut inclure un service traiteur haut de gamme adapté à votre soirée grâce à notre solide connaissance des chefs et traiteurs de la région.<br/>
-				<i>Maximum 500 personnes</i>
-			</p>
+			<h1>Pour votre entreprise</h1>
 			<div class="row">
-				<h2>Team building</h2>
 				<div class="columns six">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/cocktail.jpg" width="400px" alt="">
+					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/prestation-entreprise.jpg" width="400px" alt="">
 				</div>
 				<div class="columns six">
 					<p>
-						Notre équipe se déplace pour vous proposer des ateliers de mixologie en groupe de vingt personnes maximums. Une activité originale et conviviale entre collègues.<br/><br/>
-						Les ingrédients et les préparations sont de grandes qualités et sélectionnés avec soins afin d'offrir le meilleur à vos équipes. Le but est d’élaborer un ou deux cocktails comme nos professionnels, ou dans un style Top Chef avec un buffet où vous aurez tous les ingrédients nécessaires pour réaliser vos propres créations plus surprenantes les unes que les autres (Modalités exactes).
+						Un besoin pour une soirée de lancement de produits, une rencontre entre collaborateurs ou toute autre occasion à célébrer dans votre entreprise ?<br/><br/>
+						Nous sommes là pour répondre à vos envies. Une prestation haut de gamme de création de cocktails adaptés à vos besoins, personnalisables à l’infini afin de respecter votre cahier des charges. Des produits de grande qualité sélectionnés par nos soins, des préparations maisons afin de vous offrir le meilleur des ingrédients. Vos cocktails reflèteront votre entreprise, pour mettre en avant votre marque, votre positionnement, pour un petit plus original dans votre stratégie de communication.<br/><br/>
+						Cette prestation peut inclure un service traiteur haut de gamme adapté à votre soirée grâce à notre solide connaissance des chefs et traiteurs de la région.<br/>
+						<i>Maximum 500 personnes</i>
 					</p>
 				</div>
 			</div>
 			<div class="row">
-				<h2>Consulting</h2>
+				<h2>Team building</h2>
+				<div class="row">
+					<div class="columns six">
+						<p>
+							Notre équipe se déplace pour vous proposer des ateliers de mixologie en groupe de vingt personnes maximums. Une activité originale et conviviale entre collègues.<br/><br/>
+							Les ingrédients et les préparations sont de grandes qualités et sélectionnés avec soins afin d'offrir le meilleur à vos équipes. Le but est d’élaborer un ou deux cocktails comme nos professionnels, ou dans un style Top Chef avec un buffet où vous aurez tous les ingrédients nécessaires pour réaliser vos propres créations plus surprenantes les unes que les autres.
+						</p>
+					</div>
+					<div class="columns six">
+						<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/team-building.jpg" width="400px" alt="">
+					</div>
+				</div>
+			</div>
+			<h2>Consulting</h2>
+			<div class="row">
 				<p>
 					Notre expertise à votre service.<br/>Nous nous déplaçons dans votre établissement afin de former vos équipes, créer une nouvelle carte des cocktails et vous conseiller sur une méthode de travail la plus efficace possible. Les cocktails préparés par vos équipes s’adapteront au mieux à l’image de votre lieu et surprendront vos clients.
-				</p>
-				<div class="columns six">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/cocktail.jpg" width="400px" alt="">
-				</div>
-				<div class="columns six">
-					<h3>Les Accords Éphémères (sur le blog et les events à venir)</h3>
-					<p>
-						Événement singulier et original, où chaque plat est accompagné d’un cocktail inédit. Venez déguster lors de ces soirées un menu de 8 plats élaborés par des chefs reconnus ou viennent se mêler 8 créations de cocktails réalisées par Tom Albani.<br/><br/>
-						Du choix des produits, locaux, originaux et savoureux aux techniques culinaires inventives et peu connues, votre palais ira de découvertes en surprises.<br/><br/>
-						Une expérience unique qui va mettre en émoi vos cinq sens. Tout est mis en œuvre pour que vous passiez un moment d’exception, entre les endroits magiques, l’ambiance chaleureuse, le service impeccable et les dégustations inoubliables.<br/><br/>
-					</p>
-				</div>
-				<h3>Laissez-vous séduire…</h3>
-				<p>
-					Vous pouvez retrouver notre vidéo de la deuxième édition des Accords Éphémères sur le site et nos réseaux sociaux, pour vous donner l'eau à la bouche.
 				</p>
 			</div>
 		</div>
 	</section>
 	<!--  -->
-	<section id="team" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/background2.jpg');">
+	<section id="team" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/background2.jpg');">
 		<div class="container">
 			<h1>_ THE _ TEAM _</h1>
 			<div class="row">
@@ -139,7 +114,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/3.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/1.jpg')" /></div>
 						<div class="name">
 							<b>Tom Albani Brun</b><br/>
 							Fondateur et chef barman
@@ -148,7 +123,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/2.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/3.jpg')" /></div>
 						<div class="name">
 							<b>Luc Dribault</b><br/>
 							Directeur général et chef de projet
@@ -162,7 +137,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/1.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/4.jpg')" /></div>
 						<div class="name">
 							<b>Zoé Vappereau</b><br/>
 							Chargée de communication et marketing
@@ -183,17 +158,37 @@
 	</section>
 	<!--  -->
 	<section id="partenaires">
-		<div class="container">
 			<h2>Ils nous font confiance</h2>
-			<div class="row">
-				<div class="columns two"><img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/1.png" alt=""></div>
-				<div class="columns two"><img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/2.jpg" alt=""></div>
-				<div class="columns two"><img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/3.png" alt=""></div>
-				<div class="columns two"><img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/4.png" alt=""></div>
-				<div class="columns two"><img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/5.png" alt=""></div>
-				<div class="columns two"><img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/6.png" alt=""></div>
+			<div class="container">
+				<div class="arrow-nav prev" id="landingpage-prev"><i class="icon-prev fa fa-arrow-left"></i></div>
+				<div class="container-img" id="container-img">
+					<div class="container-img-wrapper" id="container-img-wrapper">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/0.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/1.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/2.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/3.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/4.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/5.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/6.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/7.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/8.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/9.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/10.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/11.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/12.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/13.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/14.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/15.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/16.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/17.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/18.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/19.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/20.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/21.png" alt="">
+					</div>
+				</div>
+				<div class="arrow-nav next" id="landingpage-next"><i class="icon-next fa fa-arrow-right"></i></div>
 			</div>
-		</div>
 	</section>
 	<!--  -->
 </div>

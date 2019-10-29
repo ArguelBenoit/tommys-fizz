@@ -102,14 +102,15 @@ $(document).ready(() => {
   var heightParticulier = $('#prestations-particuliers .container').innerHeight() + 'px';
   var heightProfessionnels = $('#prestations-professionnels .container').innerHeight() + 'px';
   $('#button-prestations-particuliers').click(() => {
-    console.log(heightParticulier);
     if (!particulierOpen && !professionnelsOpen) {
+      $('html, body').animate({ scrollTop: $('#prestations-particuliers').position().top }, 500);
       particulierOpen = true;
       $('#prestations-particuliers').css('height', heightParticulier);
     } else if (particulierOpen && !professionnelsOpen) {
       particulierOpen = false;
       $('#prestations-particuliers').css('height', '0px');
     } else if (!particulierOpen && professionnelsOpen) {
+      $('html, body').animate({ scrollTop: $('#prestations-particuliers').position().top }, 500);
       particulierOpen = true;
       professionnelsOpen = false;
       $('#prestations-professionnels').css('height', '0px');
@@ -120,18 +121,20 @@ $(document).ready(() => {
   });
   $('#button-prestations-professionnels').click(() => {
     if (!professionnelsOpen && !particulierOpen) {
+      $('html, body').animate({ scrollTop: $('#prestations-particuliers').position().top }, 500);
       professionnelsOpen = true;
       $('#prestations-professionnels').css('height', heightProfessionnels);
     } else if (professionnelsOpen && !particulierOpen) {
       professionnelsOpen = false;
       $('#prestations-professionnels').css('height', '0px');
     } else if (!professionnelsOpen && particulierOpen) {
+      $('html, body').animate({ scrollTop: $('#prestations-particuliers').position().top }, 500);
       particulierOpen = false;
       professionnelsOpen = true;
       $('#prestations-particuliers').css('height', '0px');
       setTimeout(() => {
         $('#prestations-professionnels').css('height', heightProfessionnels);
-      },500);
+      }, 500);
     }
   });
 
@@ -140,4 +143,24 @@ $(document).ready(() => {
   if($('.rellax').length) {
     new Rellax('.rellax', {});
   }
+
+  // logos partenaires LandingPage
+  var moreLeftValue = 400;
+  var leftValue = -20;
+  $('#landingpage-prev').click(() => {
+    leftValue = -20;
+    $('#container-img-wrapper').css('margin-left', '-20px');
+    $('#landingpage-prev').css('display', 'none');
+    $('#landingpage-next').css('display', 'inherit');
+  });
+  $('#landingpage-next').click(() => {
+    // console.log(leftValue, -$('#container-img-wrapper').innerWidth());
+    if(leftValue > -$('#container-img-wrapper').innerWidth()) {
+      leftValue = leftValue - moreLeftValue;
+      $('#container-img-wrapper').css('margin-left', leftValue + 'px');
+      $('#landingpage-prev').css('display', 'inherit');
+    } else {
+      $('#landingpage-next').css('display', 'none');
+    }
+  });
 });

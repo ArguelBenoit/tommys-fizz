@@ -24,9 +24,9 @@
               <div class="thumbnail">
                 <?php
                 if(has_post_thumbnail()) { ?>
-                  <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/sail.png'), url('<?php echo get_the_post_thumbnail_url(); ?>')" class="thumbnail"/></div>
+                  <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/options/sail.png'), url('<?php echo get_the_post_thumbnail_url(); ?>')" class="thumbnail"/></div>
                 <?php } else { ?>
-                  <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/noimage.png')"; class="thumbnail"></div>
+                  <div style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/options/noimage.png')"; class="thumbnail"></div>
                 <?php } ?>
               </div>
     					<div class="title-article">
