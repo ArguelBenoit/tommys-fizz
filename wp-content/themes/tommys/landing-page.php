@@ -27,7 +27,7 @@
 			<h1>Nos prestations</h1>
 			<div class="row">
 				<div class="columns six">
-					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/cocktail.jpg" width="400px" alt="">
+					<img src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/landing-page/cocktail2.jpg" width="400px" alt="">
 				</div>
 				<div class="columns six">
 					<p>Afin de répondre à vos envies nous vous proposons un bar mobile, complètement autonome qui nous suit partout. Élément décoratif et lieu de convivialité autour d’un de nos fabuleux cocktails, il rendra votre événement inoubliable.</p>
@@ -88,7 +88,7 @@
 					<div class="columns six">
 						<p>
 							Notre équipe se déplace pour vous proposer des ateliers de mixologie en groupe de vingt personnes maximums. Une activité originale et conviviale entre collègues.<br/><br/>
-							Les ingrédients et les préparations sont de grandes qualités et sélectionnés avec soins afin d'offrir le meilleur à vos équipes. Le but est d’élaborer un ou deux cocktails comme nos professionnels, ou dans un style Top Chef avec un buffet où vous aurez tous les ingrédients nécessaires pour réaliser vos propres créations plus surprenantes les unes que les autres.
+							Les ingrédients et les préparations sont de grande qualité et sélectionnés avec soins afin d'offrir le meilleur à vos équipes. Le but est d’élaborer un ou deux cocktails comme nos professionnels, ou dans un style Top Chef avec un buffet où vous aurez tous les ingrédients nécessaires pour réaliser vos propres créations plus surprenantes les unes que les autres.
 						</p>
 					</div>
 					<div class="columns six">
@@ -114,7 +114,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/1.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/1.png')" /></div>
 						<div class="name">
 							<b>Tom Albani Brun</b><br/>
 							Fondateur et chef barman
@@ -123,7 +123,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/3.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/3.png')" /></div>
 						<div class="name">
 							<b>Luc Dribault</b><br/>
 							Directeur général et chef de projet
@@ -137,7 +137,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/4.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/4.png')" /></div>
 						<div class="name">
 							<b>Zoé Vappereau</b><br/>
 							Chargée de communication et marketing
@@ -146,7 +146,7 @@
 				</div>
 				<div class="columns four">
 					<div class="people-container">
-						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/2.jpg')" /></div>
+						<div class="img" style="background: url('<?php echo get_bloginfo( 'template_directory' ); ?>/img/team/2.png')" /></div>
 						<div class="name">
 							<b>Benjamin Robert</b><br/>
 							Barman
