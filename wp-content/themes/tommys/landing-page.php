@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row" style="padding: 50px 0;">
 				<h1>À propos</h1>
-				<p>Créée par Tom Albani, Tommy’s Fizz vous offre des prestations haut de gamme autour du cocktail. Passionné par la création et les produits il met avec son équipe, son talent au service de tous vos événements pour leur apporter une touche originale. Toutes les formules sont personnalisables pour répondre au mieux à vos besoins. N’hésitez pas et vivez une expérience gustative unique à travers nos cocktails.</p>
+				<p>Créée par Tom Albani, l'entreprise Tommy’s Fizz vous offre des prestations haut de gamme autour du cocktail. Passionné par la création et les produits il met avec son équipe, son talent au service de tous vos événements pour leur apporter une touche originale. Toutes les formules sont personnalisables pour répondre au mieux à vos besoins. N’hésitez pas et vivez une expérience gustative unique à travers nos cocktails.</p>
 			</div>
 		</div>
 	</section>
@@ -77,8 +77,7 @@
 					<p>
 						Un besoin pour une soirée de lancement de produits, une rencontre entre collaborateurs ou toute autre occasion à célébrer dans votre entreprise ?<br/><br/>
 						Nous sommes là pour répondre à vos envies. Une prestation haut de gamme de création de cocktails adaptés à vos besoins, personnalisables à l’infini afin de respecter votre cahier des charges. Des produits de grande qualité sélectionnés par nos soins, des préparations maisons afin de vous offrir le meilleur des ingrédients. Vos cocktails reflèteront votre entreprise, pour mettre en avant votre marque, votre positionnement, pour un petit plus original dans votre stratégie de communication.<br/><br/>
-						Cette prestation peut inclure un service traiteur haut de gamme adapté à votre soirée grâce à notre solide connaissance des chefs et traiteurs de la région.<br/>
-						<i>Maximum 500 personnes</i>
+						Cette prestation peut inclure un service traiteur haut de gamme adapté à votre soirée grâce à notre solide connaissance des chefs et traiteurs de la région.
 					</p>
 				</div>
 			</div>
@@ -177,12 +176,15 @@
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/0.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/1.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/5.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/22.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/23.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/2.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/3.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/4.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/6.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/7.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/8.png" alt="">
+						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/24.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/9.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/10.png" alt="">
 						<img width="100%" src="<?php echo get_bloginfo( 'template_directory' ); ?>/img/logo-ext/11.png" alt="">

@@ -117,6 +117,9 @@ $(document).ready(() => {
       setTimeout(() => {
         $('#prestations-particuliers').css('height', heightParticulier);
       },750);
+      setTimeout(() => {
+        $('#prestations-particuliers').css('height', 'inherit');
+      },1500);
     }
   });
   $('#button-prestations-professionnels').click(() => {
@@ -135,6 +138,9 @@ $(document).ready(() => {
       setTimeout(() => {
         $('#prestations-professionnels').css('height', heightProfessionnels);
       }, 500);
+      setTimeout(() => {
+        $('#prestations-professionnels').css('height', 'inherit');
+      },1500);
     }
   });
 
